@@ -1,0 +1,597 @@
+ 
+body{
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+ .brand {
+	/* display: block; */
+    max-height: 120px; 
+    width: auto;
+	
+}
+
+a{
+    text-decoration: none;
+    color: #38B57F;
+    text-align: center;
+}
+
+
+.wrap{
+    display: flex;
+    flex-direction: column;
+    max-width: 335px;
+
+} 
+
+.nav__bar{
+    display: flex;
+    order:-1;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    /* border: black solid 3px; */
+    max-width: 100%;
+}
+
+
+.nav__bar h1 img{
+    
+    max-height: 120px;
+    width: auto;
+}
+
+.nav__bar ul{
+    order:-1;
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-evenly;
+    overflow: hidden;
+    margin: 10px;
+    border-bottom: lightgray solid 2px;
+}
+
+.nav__bar>ul>li{
+    display: flex;
+    justify-content: space-evenly;
+    flex-shrink: 8;
+    flex-grow: 1;
+}
+
+#vendors{
+    flex-shrink: 1;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.nav__bar>ul>li>a{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-evenly;
+    flex-basis: 25%;
+    flex-grow: 1;
+    flex-shrink: 8;
+    margin: 5px;
+    font-size: .75em;
+
+
+}
+
+.nav__bar>ul>li>a>i{
+    color:black;
+    font-size:40px;
+    padding: 5px;
+    display: none;
+    
+}
+
+
+.main{
+    /* border: green 3px solid; */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+
+
+/* .main_slides h1{
+    border: greenyellow solid 4px;
+    position: absolute;
+    margin-top:-43px; 
+    width: 93%;
+    color: black;
+    background: rgba(255,255,255,0.7);
+    z-index: 1;
+
+} */
+
+.main_img{
+    display: flex;
+    min-height: 248px;
+    min-width: 100%;
+    flex-direction: column-reverse;
+    background-image: url("http://foodsense.is/uploads/slides/0232_foodsense.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin-bottom: 10px;
+
+}
+
+.main_img h1 {
+    
+    background: rgba(255,255,255,0.7);
+    color: black;
+    line-height: 1.2em;
+    font-size: .75em;
+    /* flex-basis: 100%; */
+    padding: 10px;
+    font-style: italic;
+    /* align-self: flex-start; */
+    text-align: left;
+    padding-left: 0%;
+}
+
+.main_img h2 {
+    background:black;
+    line-height: 1em;
+    font-size: .75em;
+    color: white;
+    padding: 10px;
+    /* flex-basis: 100%; */
+    font-style: italic;
+    text-align: left;
+    padding-left: 0%;
+
+}
+
+.sign__in{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-top: lightgrey 1px dashed;
+    border-bottom: lightgrey 1px dashed;
+}
+
+
+
+.form_text {
+	float: left;
+    padding: 7px;
+    margin: 1%;
+	font-size: .75em;
+    font-style: italic;
+    display: flex;
+    justify-content: space-evenly;
+} 
+
+.form_text>i{
+    font-size: 40px;
+    margin-right: 10px;
+    align-self: center;
+}
+
+.email{
+    width:60%;
+    border-radius: 5px;
+}
+
+.submit{
+    border-radius: 5px;
+}
+
+.article{
+    display: flex;
+    flex-direction: column;
+    margin:5%;
+    font-size: .75em;
+}
+
+.article > h3{
+    color: #38B57F;
+    margin-bottom:2%;
+    margin-top:2%; 
+}
+
+.article > img{
+    border: 1px lightgrey solid;
+    padding: 10px;
+}
+
+.footer{
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    max-width: 350px;
+    padding-top: 15px;
+    margin: 10px;
+    border-top: solid 1px lightgrey;
+}
+
+.footer_links{
+    display: flex;
+    list-style-type:none;
+    /* flex-grow: 1; */
+    /* flex-basis: 100%; */
+    /* padding: 3px; */
+}
+
+.footer_links>li{
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    flex-shrink: 8;
+    margin: 2px;
+    /*  */
+
+}
+
+#terms{
+    border-right: #38B57F solid 1px;
+    border-left: #38B57F solid 1px;
+    padding: 1px;
+
+}
+
+.non_social{
+    flex-basis: 60%;
+    font-size: .7em;
+}
+
+.social{
+    flex-basis: 40%;
+    font-size: 2em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer_policy{
+    color: gray;
+    font-size: .95em;
+}
+
+.img_nav_bar{
+    width:100%;
+    order: -2;
+    display: none;
+}
+
+.img_nav_bar>ul{
+    width:100%;
+    height: 1.2em;;
+    display: flex;
+    /* order:1; */
+}
+
+.img_nav_bar>ul>li{
+    display: flex;
+    flex-basis: 100%;
+    background: #38B57F;
+    color:white;
+
+}
+
+
+.img_nav_bar>ul>li>a>span{
+    color: white;
+    text-align: center;
+}
+
+.nav__bar>section{
+    display: none;
+}
+
+@media all and (min-width: 480px) {
+    .wrap{
+        min-width: 480px;
+    }
+
+    .footer{
+        min-width: 480px;
+    }
+
+    .nav__bar{
+        flex-wrap: nowrap;
+        margin: 2%;
+    }
+
+    .nav__bar ul{
+        order: 0;
+        flex-basis: 70%;
+        border: none;
+    }
+
+    .nav__bar h1 img{
+    
+        max-height: 140px;
+        width: auto;
+    }
+
+    .main_img{
+        min-width: 475px;
+    }
+
+    .sign__in{
+        width: 475px;
+    }
+
+    form{
+        display: flex;
+        justify-content: space-evenly;
+        /* border: black 1px solid; */
+        width: 100%;
+    }
+
+    .email{
+        width:70%;
+        align-self: flex-start;
+    }
+
+    .articles{
+        display: flex;
+        flex-wrap: wrap;
+        width: 480px;
+        justify-content: space-around;
+        margin:0%;
+        /* font-size: .75em; */
+    }
+
+    .article{
+        max-width: 40%;
+        padding: 0%;
+    }
+
+    .article > img{
+
+        width: 210px;
+
+    }
+
+    .footer{
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .footer_links>li{
+        justify-content: flex-start;
+        margin: 0;
+    }
+
+    .non_social{
+        flex-basis: 45%;
+        order:1;
+    }
+
+    .social{
+        flex-basis: 55%;
+        justify-content: flex-end;
+    }
+
+    .social>a{
+        margin: 3px;
+    }
+
+}
+
+@media all and (min-width: 768px) {
+
+    .wrap{
+        min-width: 762px;
+    }
+
+    .footer{
+        max-width: 762px;
+    }
+
+
+    
+    .nav__bar>ul>li>a>i{
+        display: block;
+    }
+
+    .main_img{
+        min-width: 762px;
+        height: 300px;
+    }
+
+    .sign__in{
+        width: 762px;
+        flex-direction: row;
+    }
+
+    .articles{
+        display: flex;
+        flex-wrap: nowrap;
+        width: 762px;
+        justify-content: space-evenly;
+        margin:0%;
+        /* font-size: .75em; */
+    }
+
+    .article{
+        max-width: 15%;
+        padding: 0%;
+        margin: 4%;
+    }
+
+    .article > img{
+
+        width: 160px;
+
+    }
+
+    .non_social{
+        flex-basis: 25%;
+        order:1;
+    }
+
+    .social{
+        flex-basis: 75%;
+    }
+    .main_img h1 {
+        width: 25%;
+    }
+
+    .main_img h2 {
+        width: 65%;
+        margin-bottom: 100px; 
+    }
+
+    .main_img{
+        justify-content: flex-start;
+    }
+
+    .img_nav_bar{
+        display: block;
+        
+    }  
+
+}
+
+@media all and (min-width: 995px) {
+
+
+
+    .nav__bar{
+        flex-direction: column;
+        width: 155px;
+        margin:0;
+        padding: 0;
+        flex-basis: 15%;
+        /* border: #38B57F 10px solid; */
+    }
+
+    
+
+    .nav__bar>ul{
+        flex-direction: column;
+        flex-basis: 30%;
+    }
+
+
+ 
+    .high_res{
+        max-width: 550px;
+        margin: 3%;
+    }
+
+    .wrap{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .main_img{
+        
+        height: 400px;
+        flex-basis: 80%;
+        /* border: red 10px solid; */
+
+        display: flex;
+        min-height: 408px;
+        min-width: 690px;
+        /* flex-direction: column-reverse;
+        background-image: url("http://foodsense.is/uploads/slides/0232_foodsense.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+        margin-bottom: 10px; */
+    }
+
+    .main{
+        width:650px;
+
+    }
+
+    .sign__in{
+        width: 700px;
+        flex-direction: row;
+    }
+
+    .articles{
+        width: 700px;
+    }
+
+
+    .nav__bar>section{
+        display: block;
+    }
+
+    .nav__bar>section>h1{
+        font-size: 1.2em;
+
+    }
+
+
+
+    .high_res{
+        display: flex;
+        
+
+    }
+
+    .footer{
+        max-width: 995px;
+        flex-basis: 100%;
+    }
+
+    .nav__bar>ul>li>a{
+        display: flex;
+        flex-direction: row;
+        font-size: 20px;
+        /* padding: 0; */
+    }
+
+    .nav__bar>ul>li>a>i{
+        font-size: 30px;
+        /* margin: 0; */
+    }
+
+    .nav__bar>ul{
+        align-items: flex-start;
+        padding-right:60%; 
+    }
+
+    .nav__bar h1 img{
+    
+        max-height: 180px;
+        width: auto;
+        padding-right:60%; 
+        
+    }
+
+    .nav__bar section{
+        align-self: flex-end;
+        /* border: yellow solid 10px; */
+        width:200px;;
+    }
+
+    .nav__bar section h1{
+        border-bottom: 1px solid lightgray;
+        padding-bottom: 5%;
+
+    }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
